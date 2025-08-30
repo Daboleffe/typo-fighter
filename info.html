@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typo Fighters — Relazione del Progetto</title>
+  <meta name="description" content="Typo Fighters è un videogioco in p5.js dove le lettere diventano personaggi interattivi: unisci tipografia, suono e gioco in un'unica esperienza.">
+
+  <!-- Open Graph (Facebook, LinkedIn, Pinterest) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Typo Fighters — Relazione del Progetto">
+  <meta property="og:description" content="Typo Fighters è un videogioco in p5.js dove le lettere diventano personaggi interattivi: unisci tipografia, suono e gioco in un'unica esperienza.">
+  <meta property="og:image" content="https://daboleffe.github.io/typo-fighters/preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://daboleffe.github.io/typo-fighters/info.html">
+  <meta property="og:site_name" content="Typo Fighters">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Typo Fighters — Relazione del Progetto">
+  <meta name="twitter:description" content="Typo Fighters è un videogioco in p5.js dove le lettere diventano personaggi interattivi: unisci tipografia, suono e gioco in un'unica esperienza.">
+  <meta name="twitter:image" content="https://daboleffe.github.io/typo-fighters/preview.png">
+  <meta name="twitter:url" content="https://daboleffe.github.io/typo-fighters/info.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://daboleffe.github.io/typo-fighters/preview.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="info.css">
+</head>
+<body>
+  <div id="content">
+    <h1>🎮 Relazione del Progetto — Typo Fighters</h1>
+
+    <h2>📌 Introduzione</h2>
+    <p><strong>Typo Fighters</strong> è un videogioco sviluppato in <strong>p5.js</strong> come esercizio di tipografia interattiva.<br>
+       L’obiettivo è esplorare la relazione tra <strong>lettera, suono e interazione</strong>, utilizzando il videogioco come mezzo espressivo.</p>
+
+    <p style="text-align:center;"><img src="https://daboleffe.github.io/typo-fighters/logo.png" alt="Logo Typo Fighters" style="max-width:90%;height:auto;"></p>
+
+    <hr>
+
+    <h2>🕹️ Gameplay</h2>
+    <ul>
+      <li>Il giocatore controlla una lettera (inizialmente <strong>X</strong>).</li>
+      <li><strong>Controlli di movimento</strong>: tasti A/D o frecce direzionali.</li>
+      <li><strong>Attacco</strong>: barra spaziatrice per sparare.</li>
+      <li><strong>Sistema delle vite</strong>: X → vita piena, Y → seconda vita, Z → ultima possibilità.</li>
+    </ul>
+    <p>L’obiettivo è colpire nell’ordine corretto le lettere della <strong>parola target</strong> finché non viene completata.</p>
+
+    <p style="text-align:center;"><img src="https://daboleffe.github.io/typo-fighters/gameplay.png" alt="Screenshot gameplay" style="max-width:90%;height:auto;"></p>
+
+    <hr>
+
+    <h2>🎨 Scelte grafiche</h2>
+    <ul>
+      <li>Ogni parola target utilizza un font specifico.</li>
+      <li>Una lettera alla volta subisce un effetto di glitch temporaneo.</li>
+      <li>Le lettere in caduta non sono perfettamente allineate.</li>
+      <li>Interfaccia minimale: parola target grande in alto, parola raccolta sotto, vite X/Y/Z.</li>
+    </ul>
+
+    <hr>
+
+    <h2>🔊 Componente sonora</h2>
+    <ul>
+      <li>Ogni lettera genera un suono sintetico con <strong>p5.sound</strong>.</li>
+      <li>Frequenza del suono basata sul codice ASCII della lettera.</li>
+      <li>Eventi sonori: colpo riuscito, danno subito, vittoria, sconfitta.</li>
+    </ul>
+
+    <hr>
+
+    <h2>⚙️ Implementazione tecnica</h2>
+    <ul>
+      <li>Classi modulari: Player, Enemy, Bullet, Explosion, FallingLetter, ecc.</li>
+      <li>Glitch visivo: cambio casuale font e traslazioni con sin() e random().</li>
+      <li>Suoni sintetici generati con p5.Oscillator e p5.Noise.</li>
+      <li>Sistema vite con updatePlayerSymbol() → X/Y/Z.</li>
+      <li>Schermate distinte: menu iniziale, vittoria, game over, con animazioni tipografiche.</li>
+    </ul>
+
+    <hr>
+
+    <h2>🎯 Conclusioni</h2>
+    <p>Il progetto esplora come la <strong>tipografia possa diventare interattiva</strong> oltre la funzione puramente comunicativa.</p>
+    <ul>
+      <li>Sfide: bilanciamento difficoltà, prestazioni con molte lettere, sincronizzazione effetti visivi-sonori.</li>
+      <li>Sviluppi futuri: livelli progressivi, parole personalizzabili, modalità multiplayer.</li>
+    </ul>
+
+    <hr>
+
+    <p style="text-align:center; margin-top:30px; font-style:italic;">Progetto di Riccardo Byku</p>
+
+    <div class="back-link" style="text-align:center; margin-top:18px;">
+      <a href="index.html">🔙 Torna al gioco</a>
+    </div>
+  </div>
+</body>
+</html>
